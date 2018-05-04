@@ -1,0 +1,361 @@
+ Lentilha 1
+
+ Area: 1458
+
+ Diametro: 44.045431
+
+ Lentilha 2
+
+ Area: 1369
+
+ Diametro: 42.190046
+
+ Lentilha 3
+
+ Area: 1256
+
+ Diametro: 41.194660
+
+ Lentilha 4
+
+ Area: 1318
+
+ Diametro: 41.012193
+
+ Lentilha 5
+
+ Area: 1103
+
+ Diametro: 37.483330
+
+ Lentilha 6
+
+ Area: 1179
+
+ Diametro: 40.024992
+
+ Lentilha 7
+
+ Area: 1301
+
+ Diametro: 40.792156
+
+ Lentilha 8
+
+ Area: 1404
+
+ Diametro: 40.447497
+
+ Lentilha 9
+
+ Area: 1132
+
+ Diametro: 37.656341
+
+ Lentilha 10
+
+ Area: 1310
+
+ Diametro: 40.496913
+
+ Lentilha 11
+
+ Area: 1267
+
+ Diametro: 39.812058
+
+ Lentilha 12
+
+ Area: 1352
+
+ Diametro: 42.720019
+
+ Lentilha 13
+
+ Area: 1229
+
+ Diametro: 38.626416
+
+ Lentilha 14
+
+ Area: 1144
+
+ Diametro: 39.115214
+
+ Lentilha 15
+
+ Area: 1155
+
+ Diametro: 37
+
+ Lentilha 16
+
+ Area: 1198
+
+ Diametro: 38.587563
+
+ Lentilha 17
+
+ Area: 1495
+
+ Diametro: 42.801869
+
+ Lentilha 18
+
+ Area: 1492
+
+ Diametro: 42.520583
+
+ Lentilha 19
+
+ Area: 1106
+
+ Diametro: 37.802116
+
+ Lentilha 20
+
+ Area: 1136
+
+ Diametro: 37.643060
+
+ Lentilha 21
+
+ Area: 1435
+
+ Diametro: 42.638011
+
+ Lentilha 22
+
+ Area: 1212
+
+ Diametro: 38.483763
+
+ Lentilha 23
+
+ Area: 1297
+
+ Diametro: 39.204592
+
+ Lentilha 24
+
+ Area: 1196
+
+ Diametro: 39.051248
+
+ Lentilha 25
+
+ Area: 1253
+
+ Diametro: 39.560081
+
+ Lentilha 26
+
+ Area: 1320
+
+ Diametro: 40.261644
+
+ Lentilha 27
+
+ Area: 1174
+
+ Diametro: 37.696154
+
+ Lentilha 28
+
+ Area: 1226
+
+ Diametro: 38.327536
+
+ Lentilha 29
+
+ Area: 1375
+
+ Diametro: 40.718546
+
+ Lentilha 30
+
+ Area: 1467
+
+ Diametro: 42.201896
+
+------------------------------------
+
+ Melancia 1
+
+ Area: 1568
+
+ Diametro: 56.718604
+
+ Melancia 2
+
+ Area: 1661
+
+ Diametro: 38.327536
+
+ Melancia 3
+
+ Area: 1591
+
+ Diametro: 54.817880
+
+ Melancia 4
+
+ Area: 1409
+
+ Diametro: 52.611786
+
+ Melancia 5
+
+ Area: 1565
+
+ Diametro: 54.341513
+
+ Melancia 6
+
+ Area: 1461
+
+ Diametro: 48.332184
+
+ Melancia 7
+
+ Area: 1615
+
+ Diametro: 48.166378
+
+ Melancia 8
+
+ Area: 1573
+
+ Diametro: 47.010637
+
+ Melancia 9
+
+ Area: 1450
+
+ Diametro: 36.715120
+
+ Melancia 10
+
+ Area: 1520
+
+ Diametro: 44.102154
+
+ Melancia 11
+
+ Area: 1519
+
+ Diametro: 52.345009
+
+ Melancia 12
+
+ Area: 1558
+
+ Diametro: 50.487622
+
+ Melancia 13
+
+ Area: 1489
+
+ Diametro: 50.803543
+
+ Melancia 14
+
+ Area: 1478
+
+ Diametro: 41.868843
+
+ Melancia 15
+
+ Area: 1368
+
+ Diametro: 36.400549
+
+ Melancia 16
+
+ Area: 1552
+
+ Diametro: 51.894123
+
+ Melancia 17
+
+ Area: 1428
+
+ Diametro: 49.648766
+
+ Melancia 18
+
+ Area: 1348
+
+ Diametro: 44.643029
+
+ Melancia 19
+
+ Area: 1553
+
+ Diametro: 56.222771
+
+ Melancia 20
+
+ Area: 1369
+
+ Diametro: 48.466483
+
+ Melancia 21
+
+ Area: 1329
+
+ Diametro: 36.400549
+
+ Melancia 22
+
+ Area: 1435
+
+ Diametro: 48.764741
+
+ Melancia 23
+
+ Area: 1450
+
+ Diametro: 49.678969
+
+ Melancia 24
+
+ Area: 1338
+
+ Diametro: 43.27817
+
+ Melancia 25
+
+ Area: 1405
+
+ Diametro: 45.541190
+
+ Melancia 26
+
+ Area: 1524
+
+ Diametro: 51.865210
+
+ Melancia 27
+
+ Area: 1527
+
+ Diametro: 48.010416
+
+ Melancia 28
+
+ Area: 1475
+
+ Diametro: 44.654227
+
+ Melancia 29
+
+ Area: 1514
+
+ Diametro: 54.129474
+
+ Melancia 30
+
+ Area: 1556
+
+ Diametro: 39.115214
