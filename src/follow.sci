@@ -1,3 +1,10 @@
+// converts linear index n to indices (row,col)
+function [row,col]=index2(n,r)
+  col=ceil(n/r);
+  a=n-(r*int(n/r));
+  row= r*(a==0)+ a*(a>0);
+endfunction
+
 function [x,y]=follow(Im, nhood)
 //
 // Extracts parametric contours of binary objects.
@@ -38,12 +45,6 @@ else
    error('Invalid neighborhood number.');
 end
 
-// converts linear index n to indices (row,col)
-deff('[row,col]=index2(n,r)', ..
-'col=ceil(n/r); ..
- a=n-(r*int(n/r)); ..
- row= r*(a==0)+ a*(a>0); ')
-
 // Assume 0 outside image
 [r,c]=size(Im);
 aux=zeros(r+2,c+2);
@@ -66,10 +67,11 @@ while ( ~finished )
   t=t+1;
   x(t)=j-2; y(t)=r-i+1;
 
-  cini=cane; continue = %T
-  while(continue) 
+  cini=cane;
+  continue1 = %T;
+  while(continue1) 
       cane=next(cane);
-      continue = Im(neighbours(cane,1),neighbours(cane,2))==0 & cane<>cini
+      continue1 = Im(neighbours(cane,1),neighbours(cane,2))==0 & cane<>cini
   end;
   if (Im(neighbours(cane,1),neighbours(cane,2))==1) then
     i = i + path(cane,1)
@@ -82,6 +84,8 @@ while ( ~finished )
     finished=%T;
   end;
 end;
+x = x+1;
+y = size(Im, 1) - (y+2);
 endfunction
 
 //
