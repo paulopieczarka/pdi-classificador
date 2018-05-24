@@ -1,13 +1,12 @@
-chdir('D:\git-clones\pdi-classificador\src');
+chdir('C:\Users\paulo\Documents\pdi-classificador');
 
 clear;
-exec('.\knn.sci');
+exec('src\1.sce');
+exec('src\knn.sci');
 
-scicv_Init();
+disp('Extraindo areas e distancias')
+[lentilhas, melancias] = extractImageInfo()
 
-xs = [1,2,3,4,5];
-ys = [1,2,10,4,5];
-
-[a, b] = euclideanDistances(xs, ys)
-disp(a)
-disp(b)
+disp('Definindo bases de test e treinamento')
+scatter(lentilhas(:,1), lentilhas(:,2), 'fill', '.');
+//scatter(melancias(:,1), melancias(:,2));
