@@ -1,19 +1,73 @@
-function neighbors = getNeighbors()
+function distance = euclidianDistance(instance1, instance2, len)
+  distance = 0
+  for x = 1:len
+    distance = distance + (instance1(x) - instance2(x))^2
+  end
+  distance = sqrt(distance)
 endfunction
 
-// def euclideanDistance(instance1, instance2, length):
-// 	distance = 0
-// 	for x in range(length):
-// 		distance += pow((instance1[x] - instance2[x]), 2)
-// 	return math.sqrt(distance)
+function sortedTable = msort(table, sortBy, direction)
+  len = size(table, 1)
+  sortedTable = []
+  [a, h] = gsort(table(:, sortBy), 'r', direction) // sorted distances
+  for x = 1:len
+    sortedTable = cat(1, sortedTable, table(h(x), :))
+  end
+endfunction
 
-function [dists, mval] = euclideanDistances(sementes)
-    dists = [];
-    for j=1:length(sementes)-1
-        dx = sementes(j, 1) - sementes(j+1, 1);
-        dy = sementes(j, 2) - sementes(j+1, 2);
-        dists = [dists, sqrt( abs(dx) + abs(dy) )];
+function neighbors = getNeighbors(trainingSet, testInstance, k)
+  distances = []
+  len = length(testInstance)-1 // type less instance
+  for x = 1:size(trainingSet, 1)
+    dist = euclidianDistance(testInstance, trainingSet(x,:), len)
+    distances = cat(1, distances, [trainingSet(x,:), dist])
+  end
+  
+  distances = msort(distances, $, 'i')
+  
+  neighbors = []
+  for x = 1:k
+    neighbors = cat(1, neighbors, distances(x,1:3))
+  end
+endfunction
+
+function response = classify(neighbors)
+  len = size(neighbors, 1)
+  votes = zeros(1, len)
+  for x = 1:len
+    guess = neighbors(x, $)
+    votes(guess) = votes(guess) + 1
+  end
+  
+  [amount, index] = max(votes)
+  response = index
+endfunction
+
+function accuracy = getAccuracy(testSet, predictions)
+  correct = 0
+  len = size(testSet, 1)
+  for x = 1:len
+    if testSet(x, $) == predictions(x) then
+      correct = correct + 1;
     end
-    
-    mval = max(dists);
+  end
+  
+  accuracy = (correct/len) * 100
+endfunction
+
+function [predictions, wrong] = knn(trainingSet, testSet, k)
+  predictions = []
+  wrong = []
+  for x = 1:size(testSet, 1)
+    neighbors = getNeighbors(trainingSet, testSet(x,:), k)
+    result = classify(neighbors)
+    predictions = cat(1, predictions, result)
+    disp('> predicted='+string(result)+', actual='+string(testSet(x,$)))
+    if testSet(x, $) <> predictions(x) then
+      wrong = cat(1, wrong, testSet(x, 1:2))
+    end
+  end
+  
+  accuracy = getAccuracy(testSet, predictions)
+  disp('Accuracy='+string(accuracy)+'%')
 endfunction

@@ -17,6 +17,7 @@ function [lentilhas, melancias] = extractImageInfo()
         
         lentilhas(i, 1) = a
         lentilhas(i, 2) = d
+        lentilhas(i, 3) = 1
     end
     
     
@@ -29,6 +30,7 @@ function [lentilhas, melancias] = extractImageInfo()
         
         melancias(i, 1) = a
         melancias(i, 2) = d
+        melancias(i, 3) = 2
     end
     
     disp(lentilhas(1, 1))
